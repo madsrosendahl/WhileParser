@@ -4,9 +4,7 @@ A simple recursive decent parser for a small While language
 The front end is a Toenizer that shows how to describe the lexical analysis of a language using regular expressions
 
 white space:                "\s+"
-
 line comments:              "//.*"
-
 identifiers:                "\w(\w|\d)*"
 
 numbers:                    "\d+"
