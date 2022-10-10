@@ -1,7 +1,7 @@
 # WhileParser
 A simple recursive decent parser for a small While language
 
-Thre front end is a Toenizer that shows how to describe the lexical analysis of a language using regular expressions
+The front end is a Toenizer that shows how to describe the lexical analysis of a language using regular expressions
 
 white space:                "\s+"
 line comments:              "//.*"
@@ -41,12 +41,12 @@ The parse will recognize input based on this grammar
 The conversion from context-free grammar to program is based on the following principles
 - nonterminals are made into functions
  - terminals are made into checks that the symbol is seen in input 
- - choice is done by checking first sets for symbols and follow sets for empty strings 
+ - choice is done by checking First sets for symbols and Follow sets for empty strings 
   
 
 The simple parser just recognizes input according to the grammars
 
-The repositor also contains a parser that builds a parse tree during parsing
+The repository also contains a parser (Parser2Node) that builds a parse tree during parsing
 The tree is constructed with nonterminals as nodes and terminals as leafs
 It uses a class Node where a node is either a leaf only containing a string 
 or a node with a string and a list of nodes.
