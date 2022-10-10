@@ -3,17 +3,19 @@ A simple recursive decent parser for a small While language
 
 The front end is a Toenizer that shows how to describe the lexical analysis of a language using regular expressions
 
-white space:                "\s+"
-line comments:              "//.*"
-identifiers:                "\w(\w|\d)*"
+  white space:                "\s+"
 
-numbers:                    "\d+"
+    line comments:              "//.*"
 
-strings:                    "\\042[^\\042]*\\042"      // octal 42 is the double quote
+    identifiers:                "\w(\w|\d)*"
 
-two character operators:    "\+\\+|\\=\\=|\\!\\=|\\&\\&|\\|\\||\\:\\="
+    numbers:                    "\d+"
 
-single character operators: "[\.\{\}\(\)\;\=\*\+\[\]\,\<\>\!\&\\:|]", 
+    strings:                    "\\042[^\\042]*\\042"      // octal 42 is the double quote
+
+    two character operators:    "\+\+|\=\=|\!\=|\&\&|\|\||\:\="
+
+    single character operators: "[\.\{\}\(\)\;\=\*\+\[\]\,\<\>\!\&\\:|]", 
 
 Input according to the first tow regular expressions are ignored
 The other are send to the parser.
