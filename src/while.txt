@@ -1,0 +1,6 @@
+program 
+  var x: integer;
+begin
+  x:= 10;
+  if x=10 then x := 3 else x := 5 ;
+end.
